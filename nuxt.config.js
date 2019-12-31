@@ -13,10 +13,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ],
-    base: {
-      href: 'router.base'
-    }
+    ]
   },
   /*
   ** Customize the progress-bar color
@@ -50,8 +47,5 @@ export default {
   },
   generate: {
     fallback: true
-  },
-  route: {
-    base: process.env.NODE_ENV === 'dev' ? '/' : '/2020/'
   }
 }
