@@ -13,7 +13,10 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    base: {
+      href: 'router.base'
+    }
   },
   /*
   ** Customize the progress-bar color
@@ -23,6 +26,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/scss/style.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -35,19 +39,6 @@ export default {
   buildModules: [
   ],
   /*
-  ** Nuxt.js modules
-  */
-  modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-  ],
-  /*
-  ** Axios module configuration
-  ** See https://axios.nuxtjs.org/options
-  */
-  axios: {
-  },
-  /*
   ** Build configuration
   */
   build: {
@@ -56,5 +47,11 @@ export default {
     */
     extend (config, ctx) {
     }
+  },
+  generate: {
+    fallback: true
+  },
+  route: {
+    base: process.env.NODE_ENV === 'dev' ? '/' : '/2020/'
   }
 }

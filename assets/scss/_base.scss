@@ -1,0 +1,134 @@
+body{
+  .wrapper{
+    font-family: tbudrgothic-std, sans-serif;
+
+    .header{
+      width: 100%;
+      height: 400px;
+      margin-bottom: 10px;
+      background-image: url('../img/header.jpg');
+      background-size: cover;
+      background-position: 0, 200px;
+
+      .jumbo{
+        .header-content{
+          height: 600px;
+
+          h1.header-title{
+            padding-top: 10%;
+            font-family: futura-pt, sans-serif;
+            font-weight: 700;
+            font-size: 7.5em;
+            text-align: center;
+            vertical-align: middle;
+            color: #fff;
+
+            a{
+              color: #fff;
+            }
+
+            a:hover{
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  
+    h2.title{
+      font-family: futura-pt, sans-serif;
+    }
+
+    .container{
+      width: 55%;
+      margin: 20px auto;
+
+      section{
+        margin-bottom: 20px;
+
+        h2.section-title{
+          font-family: futura-pt, sans-serif;
+          font-weight: 700;
+          font-size: 2.4em;
+          border-bottom: solid 1px #eee;
+        }
+
+        h3.sub-title{
+          font-weight: 600;
+          font-size: 1.6em;
+        }
+
+        p.akeome{
+          padding: 20px;
+          border-radius: 10px;
+          background-color: #f8f8f8;
+          font-size: 1em;
+          text-align: center;
+          line-height: 3em;
+        }
+
+        p.description{
+          font-size: 1em;
+        }
+
+        a.link-btn, button.try-btn{
+          display: inline-block;
+          width: 100%;
+          margin: 10px auto;
+          padding: 10px;
+          color: #fff;
+          background-color: #fe7777;
+          border: 0;
+          border-radius: 10px;
+          text-align: center;
+        }
+
+        a.link-btn:hover, button.try-btn:hover{
+          text-decoration: none;
+        }
+
+        ul.done-list{
+          list-style: none;
+
+          li.list-item{
+            h3.list-item-title{
+              font-size: 1.2em;
+            }
+          }
+        }
+
+        .fortune-panel{
+          padding: 10px;
+          border: solid 1px #ddd;
+          text-align: center;
+
+          .fortune-section{
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f7f7f7;
+
+            .fortune-result{
+              font-size: 2em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body{
+    .wrapper{
+      .container{
+        width: 90%;
+
+        section{
+          p.akeome{
+            line-height: 1.8em;
+          }
+        }
+      }
+    }
+  }
+}
