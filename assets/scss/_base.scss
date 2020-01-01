@@ -98,8 +98,10 @@ body{
           list-style: none;
 
           li.list-item{
+            margin-bottom: 20px;
             h3.list-item-title{
               font-size: 1.2em;
+              font-weight: 600;
             }
           }
         }
@@ -125,17 +127,15 @@ body{
   }
 }
 
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
 @media screen and (max-width: 600px) {
   body{
     .wrapper{
       .header{
         height: 300px;
-
-        .jumbo{
-          .header-content{
-            
-          }
-        }
       }
       .container{
         width: 90%;
