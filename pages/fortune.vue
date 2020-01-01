@@ -2,6 +2,7 @@
   .container
     section
       h2.section-title Omikuji 2020
+      p.description ※このおみくじは何度でも無料で引くことができます
       .fortune-panel(v-if="result")
         h3.sub-title 結果
         .fortune-section
