@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     loadFortune: function() {
-      let rand = getRand(0, 6)
+      let rand = getRand(0, 7)
       this.result = fortune_data[rand].fortune
       this.detail = fortune_data[rand].detail
       this.trackId = fortune_data[rand].music
