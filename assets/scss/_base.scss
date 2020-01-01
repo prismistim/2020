@@ -25,10 +25,6 @@ body{
             a{
               color: #058bc7;
             }
-
-            a:hover{
-              text-decoration: none;
-            }
           }
         }
       }
@@ -86,6 +82,18 @@ body{
           text-decoration: none;
         }
 
+        a.twitter-share-button{
+          display: inline-block;
+          background-color: #1b95e0;
+          padding: 10px 20px;
+          border-radius: 5px;
+          color: #fff;
+        }
+
+        a.twitter-share-button:hover{
+            text-decoration: none;
+        }
+
         ul.done-list{
           list-style: none;
 
@@ -120,6 +128,15 @@ body{
 @media screen and (max-width: 600px) {
   body{
     .wrapper{
+      .header{
+        height: 300px;
+
+        .jumbo{
+          .header-content{
+            
+          }
+        }
+      }
       .container{
         width: 90%;
 
