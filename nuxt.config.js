@@ -60,7 +60,5 @@ export default {
   generate: {
     fallback: true
   },
-  router: {
-    base: routerBase
-  }
+  routerBase
 }
