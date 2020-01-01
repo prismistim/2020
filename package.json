@@ -8,16 +8,20 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "generate:github": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate",
+    "deploy": "yarn generate:github && yarn push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
+    "cross-env": "^6.0.3",
     "node-sass": "^4.13.0",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
     "pug-plain-loader": "^1.0.0",
+    "push-dir": "^0.4.1",
     "sass-loader": "^8.0.0"
   }
 }

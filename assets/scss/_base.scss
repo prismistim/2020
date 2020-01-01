@@ -8,7 +8,7 @@ body{
       margin-bottom: 10px;
       background-image: url('../img/header.jpg');
       background-size: cover;
-      background-position: 0, 200px;
+      background-position: 0, 600px;
 
       .jumbo{
         .header-content{
@@ -21,10 +21,9 @@ body{
             font-size: 7.5em;
             text-align: center;
             vertical-align: middle;
-            color: #fff;
 
             a{
-              color: #fff;
+              color: #058bc7;
             }
 
             a:hover{
@@ -100,6 +99,7 @@ body{
         .fortune-panel{
           padding: 10px;
           border: solid 1px #ddd;
+          border-radius: 10px;
           text-align: center;
 
           .fortune-section{
