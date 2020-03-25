@@ -1,6 +1,6 @@
 # 2020
 
-> akeome
+> akeom
 
 ## Build Setup
 
